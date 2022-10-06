@@ -1,0 +1,276 @@
+/* IMPOSTAZIONI GENERALI */
+body{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7em;
+    background-image: url(../img/sfondo.png);
+}
+
+/* HEADER */
+
+header{
+    background-image: linear-gradient(rgb(108, 180, 202), rgb(9, 87, 109));
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.733);
+    margin: 20px 5vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    padding:50px;
+    font-weight: 600;
+    font-size:1.3em;
+    color: white;
+}
+
+header img{
+    width: 375px;
+    height: 90px;
+}
+
+header p{
+    margin:20px 0;
+}
+header ul{
+    list-style-type: ' \21D2';
+    list-style-position: inside;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+header a:visited, header a:hover{
+    color:white;
+    text-decoration: none;
+
+}
+
+header li::after{
+    content:' \21D0';
+}
+
+header+hr{
+    visibility: hidden;
+}
+
+/* MAIN */
+main{
+    margin:0px 5vw 30px 5vw;
+    padding:15px;
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.733);
+    background-color: white;
+}
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+main~hr{
+    visibility: hidden;
+}
+
+main h1{
+    font-size:2em;
+    line-height: 1.5em;
+    margin:30px 0px;
+    font-weight: 600;
+}
+
+main p{
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    font-weight: 450;
+}
+
+h1+p{
+    color:rgb(200, 200, 200);
+    margin-bottom: 30px;
+}
+
+main p i:first-of-type{
+    margin-right: 5px;
+}
+
+main p:nth-of-type(2){
+    margin-bottom: 30px;
+}
+
+main strong{
+    color:rgb(171, 66, 129);
+}
+
+main ul{
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    font-weight: 450;
+}
+
+main ul code{
+    border: 1px solid rgb(138, 138, 138);
+    border-radius:5px;
+    background-color: #E2E2E2;
+}
+
+main ol{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    font-weight: 450;
+}
+
+ul+h2{
+    font-size: 1.1em;
+    font-weight: 450;
+}
+
+/* TABELLE */
+
+table caption{
+    font-size: 1.1em;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+table{
+    border-collapse: collapse;
+    border-bottom: 2px solid #4567C0;
+    font-size: 1.1em;
+    font-weight: 450;
+    margin-bottom: 30px;
+}
+
+table th{
+    background-color: #4567C0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color:white;
+    padding:15px;
+
+}
+
+table tr:nth-child(even){
+    background-color: rgb(230, 230, 230);
+}
+
+table tr{
+    border-bottom: 1px solid rgb(200, 200, 200);
+
+    border-top: 1px solid rgb(200, 200, 200);
+}
+table td{
+    padding: 15px;
+}
+
+table+p a{
+    color:rgb(0, 183, 255);
+}
+
+table+p a:visited, table+p a:link{
+    color:rgb(0, 183, 255);
+}
+
+iframe{
+    display: block;
+    width: 340px;
+    height: 200px;
+    margin: 0px auto 30px auto;
+    border-radius: 25px;
+}
+/* FORM */
+
+section{
+    background-color: rgb(230, 230, 230);
+    padding:20px;
+    margin-bottom: 30px;
+}
+section h2{
+    font-size: 1.3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:black;
+    text-align: center;
+    margin-bottom:30px;
+}
+
+section input, section button{
+    border-radius: 0%;
+    border:0px solid transparent;
+}
+
+section input{
+    border-bottom:2px dashed rgb(180, 180, 180);
+    height:30px;
+    font-size: 1.1em;
+}
+
+section button{
+    height:30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    background-color: #4567C0;
+    color: white;
+    
+}
+/* ELEMENTI NELL' ASIDE */
+
+aside h2{
+    font-size: 1.3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+aside div{
+    background-color: rgb(230, 230, 230);
+    border:1px solid rgb(180, 180, 180);
+    padding:15px;
+    margin-bottom: 15px;
+}
+
+aside div a{
+    color: rgb(0, 183, 255);
+    font-size: 1.1em;
+    font-weight: 450;
+}
+
+aside div a:link, aside div a:visited{
+    color: rgb(0, 183, 255);
+    font-size: 1.1em;
+    font-weight: 450;
+}
+
+aside div p:nth-of-type(2){
+    
+    text-indent: 90px;
+}
+/* FOOTER */
+
+footer{margin:20px 5vw;
+    border:1px solid black;
+    padding:15px;
+    text-align: center;
+    background-image: linear-gradient(rgb(46, 70, 90), rgb(20,20,20));
+}
+
+footer p{
+    font-size: 1.1em;
+    font-weight: 450;
+    margin-bottom: 15px;
+    color: white;
+}
+
+footer address{
+    font-size: 1.1em;
+    font-weight: 450;
+    color: white;
+}
+
+footer a{
+    color:rgb(171, 66, 129);
+}
+
+footer a:link, footer a:visited{
+    color:rgb(171, 66, 129);
+}
