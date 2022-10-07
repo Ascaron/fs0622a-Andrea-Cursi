@@ -44,12 +44,25 @@ header img{
     height:2em;
 }
 
-#updown{
+header ul{
     list-style: none;
 }
 
-header li{
+#updown{
+    display: none;
+}
+
+input[type="checkbox"]:checked + #updown{
+    display: block;
+}
+
+#check{
+    display: none;
+}
+
+header ul a{
     color:#e42424;
+    text-decoration: none;
 }
 
 header .buttons{
@@ -210,9 +223,9 @@ footer button{
         right:0.5em;
     }
     
-    header li{
+    header ul a{
         color:grey;
-        display: inline-block;
+        display:inline-block
     }
 
     header .buttons{
