@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color: black;
+    color:turquoise;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.2rem;
+    line-height: 1.5;
+    padding:100px;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.3rem;
+    margin-bottom: 100px;
+}
+
+button{
+    font-size: 1.5rem;
+    background-color: turquoise;
+    box-shadow: 3px 3px 3px turquoise;
+    border:0px solid turquoise;
+    display: block;
+    margin: 20px auto;
+}
+
+button:active{
+    transform: scale(0.8);
+}
+
+li{
+    list-style-type: none;
+}
+
+h2{
+    font-size: 1.8rem;
+}
