@@ -1,0 +1,88 @@
+*{
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-size: 1,2rem;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+#openMenu{
+    display: inline-block;
+    padding: 10px;
+    background-color: blue;
+    color:white;
+    border:0px solid black;
+}
+
+.menuList{
+    display:none;
+}
+
+.listEl{
+    background-color: orchid;
+    padding:10px;
+    list-style-type: none;
+    width:200px;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+h1{
+    margin:50px 0px;
+    text-align: center;
+    color:lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div:first-of-type{
+margin:100px auto 30px 50px;
+}
+
+div:last-of-type{
+    margin:0px auto 30px 30px;
+}
+
+h2{
+    margin:30px;
+}
+
+#toDoList{
+    display: inline-block;
+}
+
+.listElements{
+    color:black;
+}
+/*CSS PER JAVASCRIPT*/
+
+.open{
+    display:block;
+}
+
+#openMenu2{
+    display: inline-block;
+    padding: 10px;
+    background-color: aqua;
+    color:white;
+    border:0px solid black;
+}
+
+.listElHover{
+    background-color: grey;
+}
+
+.listElementsHover{
+    color:red;
+}
+
+.listElementsBar{
+    opacity: 0.5;
+    text-decoration: line-through;
+}

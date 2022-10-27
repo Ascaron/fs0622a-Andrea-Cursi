@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina interattiva</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button type="button" id="openMenu" onclick="show()">Apri</button>
+            <ul class="menuList">
+                <li class="listEl"><a href="#">Home</a></li>
+                <li class="listEl"><a href="#">Chi sono</a></li>
+                <li class="listEl"><a href="#">Contatti</a></li>
+            </ul>
+        </nav>
+        <h1 id="title">Pagina interattiva</h1>
+    </header>
+    <main>
+        <div>
+            <button class="buttons" onclick="ingrandisci()">grande</button>
+            <button class="buttons" onclick="colora()">colore</button>
+            <button class="buttons" onclick="maiuscolo()">maiuscolo</button>
+            <button class="buttons" onclick="nascondi()">nascondi</button>
+            <button class="buttons" onclick="mostra()">mostrare</button>
+        </div>
+        <div>
+            <h2>Lista degli impegni giornalieri</h2>
+            <ul id="toDoList">
+                <li class="listElements">Lavare la macchina</li>
+                <li class="listElements">Andare dal dentista</li>
+                <li class="listElements">Palestra</li>
+                <li class="listElements">Spesa</li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
