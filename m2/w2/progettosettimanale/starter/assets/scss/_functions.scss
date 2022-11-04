@@ -1,0 +1,14 @@
+@function em($pixel, $content:16px){
+    @return ($pixel/$content)*1em;
+}
+
+@function spaceDown($marginDown, $margin:10%){
+    @return $marginDown*$margin;
+}
+
+/*@function changeColor($baseColore){
+    @if(lightness($baseColore)<=50%){
+        @return white;
+    }
+    @return black;
+} FUNZIONE DARK MODE NON COMPLETA*/

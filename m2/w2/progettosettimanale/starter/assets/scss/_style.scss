@@ -1,0 +1,147 @@
+@mixin large-screens() {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: em(20px);
+}
+
+main {
+    h2, h3 {
+        font-weight: 300;
+    }
+}
+
+#navBar {
+
+    h1 {
+        font-size: em(16px);
+        font-weight: 300;
+    }
+
+    svg:first-of-type{
+        color:$pink;
+    }
+
+    li {
+        font-size: em(12px);
+    }
+}
+
+#firstContainer {
+    background-image: url("../img/pexels-aleksandar-pasaric-325185.jpg");
+    background-position: 0px -200px;
+    padding: 80px 0px 250px 0px;
+
+    button {
+        font-size: em(12px);
+        border: none;
+        padding: 10px;
+        color: $white;
+        border-radius: 5px;
+    }
+
+    h2 {
+        font-size: em(35px);
+        @include large-screens(){
+            font-size: em(45px);
+        }
+    }
+
+    p{
+        @include large-screens(){
+            font-size: em(15px);
+        }
+    }
+}
+
+.colorOne {
+    color: $pink;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+#firstContainer button,
+#navBar,
+footer {
+    background: linear-gradient(to top, #6610F2, #7C32F4);
+    /*color:changeColor(#6610F2);    RICHIAMO PER LA DARK MODE*/
+}
+
+#secondContainer {
+    background-color: #f5f5f5;
+    padding: spaceDown(0.8) 0px;
+
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    h3 {
+        font-size: em(25px);
+    }
+
+    p {
+        font-size: em(13px);
+    }
+}
+
+#firstWave {
+    background-color: #f5f5f5;
+}
+
+#partnership {
+    img {
+        width: 100px;
+    }
+
+    h2 {
+        margin-bottom: spaceDown(0.5);
+    }
+}
+
+#carosello {
+    h2 {
+        margin-bottom: spaceDown(1.2);
+    }
+
+    .mioDiv {
+        p {
+            font-size: em(14px);
+            line-height: em(32px);
+        }
+
+        width:spaceDown(6);
+        @include large-screens(){
+            width:spaceDown(6.5);
+        }
+    }
+
+    img {
+        width: 75px;
+    }
+
+    p {
+        font-size: em(18px);
+    }
+}
+
+footer{
+    p{
+        font-size: em(13px);
+    }
+
+    h4{
+        font-weight: 300;
+    }
+}
