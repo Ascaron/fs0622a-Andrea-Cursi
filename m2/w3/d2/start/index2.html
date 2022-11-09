@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paginazione</title>
+
+    <style>
+        .pagine span {
+            margin: 0 5px;
+            cursor: pointer;
+            opacity: .5;
+        }
+        .pagine span:hover {
+            opacity: 1;
+        }
+        .pagine span.active {
+            opacity: 1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <table id="table">
+        <h1>TABLE 1</h1>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Nome</th>
+                <th>Cognome</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody"></tbody>
+
+        <tfoot>
+            <tr>
+                <!-- <td>
+                    <button class="indietro">INDIETRO</button>
+                </td> -->
+                <td colspan="3">
+                    <!-- PULSANTI E PAGINE ANDRANNO QUA -->
+                    <div class="pagine"></div>
+                </td>
+                <!-- <td>
+                    <button class="avanti">AVANTI</button>
+                </td> -->
+            </tr>
+        </tfoot>
+    </table>
+    <script src="assets/js/script2.js"></script>
+
+</body>
+
+</html>

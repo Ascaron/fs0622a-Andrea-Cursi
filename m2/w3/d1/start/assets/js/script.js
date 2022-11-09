@@ -69,8 +69,7 @@ document.getElementById('invia').addEventListener('click', function () {
 function creaLista(newNome, newCognome, newEta) {
     let nuovoElenco = new Persone(newNome, newCognome, newEta);
     arrayPersone.push(nuovoElenco);
-    console.log(arrayPersone);
-    elencoPersone = `<dt>${nuovoElenco.nome} ${nuovoElenco.cognome} ${nuovoElenco.eta}</dt>`
+    elencoPersone = `<tr><td>${nuovoElenco.nome}</td><td>${nuovoElenco.cognome}</td><td>${nuovoElenco.eta}</td></tr>`
     document.getElementById('lista').innerHTML += elencoPersone;
     document.getElementById('nome').value='';
     document.getElementById('cognome').value='';
