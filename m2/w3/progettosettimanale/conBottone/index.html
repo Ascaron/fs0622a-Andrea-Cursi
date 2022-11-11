@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione studenti</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi' crossorigin='anonymous'>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3'
+        crossorigin='anonymous'></script>
+        <script src="https://kit.fontawesome.com/3cb8d58415.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="container-fluid bg-dark text-white d-flex justify-content-center mb-3">
+        <h2>Lista utenti dinamica</h2>
+    </header>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center mb-5">FORM DI INSERIMENTO DATI</h3>
+                <form id="form">
+                    <fieldset class="border border-dark p-4">
+                        <label for="nome" class="form-label">NOME</label>
+                        <input type="text" id="nome" class="form-control">
+                        <label for="cognome" class="form-label">COGNOME</label>
+                        <input type="text" id="cognome" class="form-control">
+                        <label for="segno" class="form-label">SEGNO ZODIACALE</label>
+                        <select name="segno" id="segno" class="form-control">
+                            <option value=""></option>
+                            <option value="Ariete">Ariete</option>
+                            <option value="Toro">Toro</option>
+                            <option value="Gemelli">Gemelli</option>
+                            <option value="Cancro">Cancro</option>
+                            <option value="Leone">Leone</option>
+                            <option value="Vergine">Vergine</option>
+                            <option value="Bilancia">Bilancia</option>
+                            <option value="Scorpione">Scorpione</option>
+                            <option value="Sagittario">Sagittario</option>
+                            <option value="Capricorno">Capricorno</option>
+                            <option value="Acquario">Acquario</option>
+                            <option value="Pesci">Pesci</option>
+                          </select>
+                        <button type="button" class="btn btn-primary mt-3" id="scrivi">INVIA</button>
+                        <button type="button" class="btn btn-primary d-none mt-3" id="modifica">INVIA</button>
+                    </fieldset>
+                </form>
+                <h4 id="errore"></h4>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center mb-5">ELENCO</h3>
+                <h3 id="erroreElenco" class="ms-5"></h3>
+                <ul id="elenco" class="list-unstyled ms-5"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

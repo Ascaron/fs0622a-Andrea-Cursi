@@ -1,0 +1,34 @@
+{
+  "elenco": [
+    {
+      "nome": "Gaetano",
+      "cognome": "Quarto",
+      "segno": "Acquario",
+      "id": 1
+    },
+    {
+      "nome": "Alberto",
+      "cognome": "Scarsi",
+      "segno": "Pesci",
+      "id": 2
+    },
+    {
+      "nome": "Luca",
+      "cognome": "Lattanzi",
+      "segno": "Toro",
+      "id": 3
+    },
+    {
+      "nome": "Serena",
+      "cognome": "Mude-Kodo",
+      "segno": "Bilancia",
+      "id": 4
+    },
+    {
+      "nome": "Andrea",
+      "cognome": "Cursi",
+      "segno": "Acquario",
+      "id": 5
+    }
+  ]
+}
