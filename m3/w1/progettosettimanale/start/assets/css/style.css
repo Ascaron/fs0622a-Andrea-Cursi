@@ -1,0 +1,113 @@
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    background-color: black;
+    background-image: url(../img/ornamental-plant-ge137d1ff2_640.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    margin: 100px auto 0px;
+    width: 350px;
+    height: 640px;
+    border-radius: 25px;
+    border: 1px solid rgb(21, 20, 20);
+    outline: 10px solid rgb(21, 20, 20);
+}
+
+fieldset div:last-of-type{
+    background-color: white;
+    width: 350px;
+    height: 640px;
+    border-radius: 25px;
+    border: 1px solid rgb(21, 20, 20);
+}
+
+i {
+    font-size: 50px;
+    text-align: center;
+    border-radius: 10px;
+    width: 52px;
+    height: 52px;
+}
+
+#primo i {
+    margin: 100px 30px 0px;
+}
+
+.fa-facebook {
+    background-color: rgba(44, 44, 212, 0.857);
+    color: white;
+}
+
+.fa-twitter {
+    background-color: rgb(44, 131, 212);
+    color: white;
+}
+
+.fa-image {
+    background-color: rgb(212, 164, 44);
+    color:rgb(212, 70, 70);
+}
+
+#secondo i {
+    margin: 100px 30px;
+}
+
+.fa-tiktok {
+    background-color:black ;
+    color: red;
+}
+
+.fa-instagram {
+    background-color: rgb(143, 31, 143);
+    color:white;
+}
+
+.fa-linkedin {
+    background-color: rgb(13, 78, 137);
+    color: white;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color:transparent;
+}
+
+#apriSchermata{
+    margin: 147px 28px;
+}
+
+.fa-phone {
+    background-color: greenyellow;
+    color: white;
+}
+
+.fa-envelope {
+    margin: 150px 30px;
+    background-color: yellow;
+    color: white;
+}
+
+.fa-camera {
+    margin: 150px 30px;
+    background-color: lightskyblue;
+    color: gray;
+}
+
+.scompari{
+    display: none;
+}
+
+.fa-house{
+    color:rgba(0, 0, 0, 0.845);
+}
+
+#chiudiSchermata{
+    margin:25px 140px 0px;
+}
