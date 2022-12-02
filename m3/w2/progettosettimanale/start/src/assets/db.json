@@ -1,0 +1,64 @@
+{
+  "lista": [
+    {
+      "body": "Pollo arrosto",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": false,
+      "type": "politic",
+      "author": "Paolo",
+      "id": 1
+    },
+    {
+      "body": "Patate al forno",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": true,
+      "type": "politic",
+      "author": "Pietro",
+      "id": 2
+    },
+    {
+      "body": "Abbacchio",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": true,
+      "type": "education",
+      "author": "Pino",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "body": "Paella",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": false,
+      "type": "news",
+      "author": "Maria"
+    },
+    {
+      "id": 5,
+      "body": "Tortilla",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": false,
+      "type": "education",
+      "author": "Arianna"
+    }
+  ],
+  "utenti": [
+    {
+      "id": 1,
+      "email": "paolo@paolo.it",
+      "name": "Paolo",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "maria@maria.it",
+      "name": "Maria",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "email": "giovanni@giovanni.it",
+      "name": "Giovanni",
+      "role": "user"
+    }
+  ]
+}

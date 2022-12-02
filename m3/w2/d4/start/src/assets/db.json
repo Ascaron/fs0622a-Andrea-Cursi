@@ -1,0 +1,39 @@
+{
+  "lista": [
+    {
+      "body": "Ciao",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": false,
+      "type": "politic",
+      "id": 1
+    },
+    {
+      "body": "Pallina",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": true,
+      "type": "politic",
+      "id": 2
+    },
+    {
+      "body": "Popo",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": true,
+      "type": "politic",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "body": "Paella",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": false,
+      "type": "news"
+    },
+    {
+      "id": 5,
+      "body": "Tortilla",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": false,
+      "type": "education"
+    }
+  ]
+}
