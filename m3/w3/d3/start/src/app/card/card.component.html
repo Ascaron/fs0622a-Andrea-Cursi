@@ -1,0 +1,8 @@
+<div class="card mt-3" style="width: 18rem;" *ngIf="photo != undefined">
+  <img [src]="photo.thumbnailUrl" class="card-img-top">
+  <div class="card-body text-center">
+      <h5 class="card-title">{{photo.id}} - {{photo.title}}</h5>
+      <a class="btn btn-danger" (click)="elimina()" [ngClass]="{'disabled': error}">Elimina</a>
+      <a class="btn btn-success mx-1" (click)="like()" [ngClass]="{'disabled': error}">{{ !liked?"Mi piace" : "Non mi piace"}}</a>
+  </div>
+</div>
