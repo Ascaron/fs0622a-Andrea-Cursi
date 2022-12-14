@@ -1,0 +1,60 @@
+<div class="container-fluid" *ngIf="token">
+    <div class="row">
+        <div class="col-6 col-lg-2 col-md-3 col-sm-3">
+            <div class="d-flex flex-column flex-shrink-0  p-2 text-white bg-dark w-100 sticky-top"
+                style="height: 100vh;">
+                <a href="/home"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <svg class="bi me-2" width="35" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                    <span class="fs-4">Menu</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active bg-primary" aria-current="page" [routerLink]="['/home']">
+                            <svg class="bi me-2" width="16" height="16">
+                                <use xlink:href="#home" />
+                            </svg>
+                            Che ti va di vedere?
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link text-white" [routerLink]="['/user']" routerLinkActive="active">
+                            <svg class="bi me-2" width="16" height="16">
+                                <use xlink:href="#user" />
+                            </svg>
+                            Profilo
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="dropdown ps-4 pb-3">
+                    <a class="d-flex align-items-center text-white text-decoration-none" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://cdn.pixabay.com/photo/2022/04/01/12/11/animal-7104649_960_720.png" alt=""
+                            width="52" height="52" class="rounded-circle me-2">
+                        <button class="btn btn-outline-primary ms-2" (click)="logout()" [routerLink]="['']"
+                            routerLinkActive="active">Esci</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-lg-10 col-md-9 col-sm-9 mt-3 d-flex flex-wrap justify-content-evenly">
+                <app-card *ngFor="let f of films; let i = index" [film]="f"></app-card>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid mt-5 text-primary text-center" *ngIf="!token">
+    <h1 class="mt-2">AH AH AH AH, QUALCUNO VUOLE FARE IL FURBO</h1>
+    <a class="nav-link pt-2 mt-2" id="feed" [routerLink]="['/register']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}">Non sei ancora registrato? Registrati</a>
+    <a class="nav-link pt-2 mt-2" id="feed" [routerLink]="['']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}">Gia registrato? Accedi</a>
+
+</div>

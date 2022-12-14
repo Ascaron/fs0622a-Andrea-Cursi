@@ -1,0 +1,27 @@
+<div class="container-fluid d-flex align-items-center">
+  <div class="container" id="form">
+    <h3 class="text-center text-primary">Bentornato!</h3>
+    <div class="container text-center mt-4">
+      <img src="https://cdn.pixabay.com/photo/2022/04/01/12/11/animal-7104649_960_720.png" alt="" width="72" height="72"
+        class="rounded-circle me-2">
+    </div>
+    <form [formGroup]="form" (ngSubmit)="login()">
+      <div class="pt-4">
+        <label for="exampleInputEmail1" class="form-label text-primary">Email</label>
+        <input type="email" class="form-control" formControlName="email" required="">
+      </div>
+      <br>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label text-primary">Password</label>
+        <input type="password" class="form-control" formControlName="password" required="">
+      </div>
+
+      <div class=" text-center">
+        <button type="submit" class="btn btn-primary" [ngClass]="{'disabled':form.invalid}">Accedi</button>
+        <a class="nav-link pt-2 text-primary" id="feed" [routerLink]="['/register']" routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">Non sei ancora registrato? Registrati</a>
+      </div>
+
+    </form>
+  </div>
+</div>
